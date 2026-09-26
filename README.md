@@ -49,6 +49,13 @@ steps:
 ## 🚀 Quickstart
 
 ```powershell
+# One line, fresh PC to running programs (installs Python via winget if missing)
+irm https://raw.githubusercontent.com/Samiullah-khan-devx/Samilang/main/install-pc.ps1 | iex
+```
+
+Or the manual way:
+
+```powershell
 # 1. Clone
 git clone https://github.com/Samiullah-khan-devx/Samilang.git
 cd samilang
