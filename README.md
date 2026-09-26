@@ -12,8 +12,7 @@ one-command Windows installer — plus a from-scratch NumPy AI lab
 [![Platform](https://img.shields.io/badge/platform-windows-lightgrey?style=flat-square&logo=windows)](https://github.com)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 [![SamiLang](https://img.shields.io/badge/samilang-v0.1.0-orange?style=flat-square)](#)
-<!-- After pushing to GitHub, replace <your-username> below with your handle to light up the CI badge:
-[![CI](https://github.com/<your-username>/samilang/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-username>/samilang/actions) -->
+[![CI](https://github.com/Samiullah-khan-devx/Samilang/actions/workflows/ci.yml/badge.svg)](https://github.com/Samiullah-khan-devx/Samilang/actions)
 
 ```text
 $ samilang examples/collatz.sm
@@ -51,7 +50,7 @@ steps:
 
 ```powershell
 # 1. Clone
-git clone https://github.com/<your-username>/samilang.git
+git clone https://github.com/Samiullah-khan-devx/Samilang.git
 cd samilang
 
 # 2. Install the language (adds `samilang` to your user PATH)
