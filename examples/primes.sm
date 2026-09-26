@@ -1,0 +1,18 @@
+# Primes under 30
+func is_prime(n) {
+  if n < 2 {
+    return false
+  }
+  for i in 2..n {
+    if n % i == 0 {
+      return false
+    }
+  }
+  return true
+}
+
+for n in 0..30 {
+  if is_prime(n) {
+    print n
+  }
+}

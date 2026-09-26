@@ -1,0 +1,33 @@
+# SamiLang tour: easy as Python
+print "hello world"
+
+name = "sami"
+print "hi " + name
+
+x = 10
+print x + 5
+print x * 2 - 3
+
+if x > 5 {
+  print "big"
+} else {
+  print "small"
+}
+
+for i in 0..5 {
+  print i * i
+}
+
+n = 0
+while n < 3 {
+  print n
+  n = n + 1
+}
+
+func fib(n) {
+  if n < 2 {
+    return n
+  }
+  return fib(n - 1) + fib(n - 2)
+}
+print fib(15)

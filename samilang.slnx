@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="myai/myai.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75dcc" Id="aa46e103-d910-46b9-b301-ba27179e4e33" />
+  <Project Path="samilang/samilang.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>

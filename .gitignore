@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+
+# .NET / TS build outputs (regenerate with `npm run build` in samilang/)
+samilang/*.js
+samilang/*.d.ts
+samilang/*.js.map
+samilang/*.d.ts.map
+samilang/*.tsbuildinfo
+
+# Visual Studio
+.vs/
+obj/
+bin/
+*.user
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SamiLang install shim target (user-local, not repo)
+# (nothing to ignore — shim lives in %LOCALAPPDATA%)

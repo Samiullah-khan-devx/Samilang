@@ -1,0 +1,44 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{aa46e103-d910-46b9-b301-ba27179e4e33}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>cli.py</StartupFile>
+    <SearchPath>.;..\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>myai</Name>
+    <RootNamespace>myai</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CommandLineArguments>info</CommandLineArguments>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="__init__.py" />
+    <Compile Include="attention.py" />
+    <Compile Include="cli.py" />
+    <Compile Include="extras.py" />
+    <Compile Include="lm.py" />
+    <Compile Include="tokenizer.py" />
+    <Compile Include="transformer.py" />
+    <Compile Include="phase1\__init__.py" />
+    <Compile Include="phase1\check.py" />
+    <Compile Include="phase1\exercises.py" />
+    <Compile Include="phase2\__init__.py" />
+    <Compile Include="phase2\mlp.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="phase1\" />
+    <Folder Include="phase2\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets')" />
+  <!-- Building the Python project = validating the AI code (PTVS defines no compiler). -->
+  <Target Name="CoreCompile">
+    <Exec Command="python -m myai.phase1.check" WorkingDirectory="$(ProjectDir).." />
+    <Exec Command="python -m myai.cli info" WorkingDirectory="$(ProjectDir).." />
+  </Target>
+</Project>
